@@ -1,8 +1,3 @@
-/* =========================================================
-   Mohamed Ghmouch — Pixel Coastal Portfolio
-   Palette: dusk-navy sky, sunset coral, sea teal, sand
-   Type: Press Start 2P (display) + VT323 (body/terminal)
-   ========================================================= */
 
 :root {
   --sea-deep: #0d2038;
@@ -21,7 +16,7 @@
   --font-display: 'Press Start 2P', cursive;
   --font-body: 'VT323', monospace;
 
-  --radius-px: 0px; /* keep hard pixel corners */
+  --radius-px: 0px;
 }
 
 * { box-sizing: border-box; }
@@ -48,7 +43,7 @@ h1, h2, h3, .pixel-title, .eyebrow, .btn, .logo, nav a {
   font-family: var(--font-display);
 }
 
-/* ---------- pixel corner utility (chunky stepped border) ---------- */
+
 .pixel-frame {
   position: relative;
   border: 4px solid var(--ink);
@@ -58,14 +53,14 @@ h1, h2, h3, .pixel-title, .eyebrow, .btn, .logo, nav a {
   image-rendering: pixelated;
 }
 
-/* ---------- layout shell ---------- */
+
 .wrap {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* ---------- top navigation ---------- */
+
 .topbar {
   position: sticky;
   top: 0;
@@ -133,7 +128,7 @@ nav.links a.active {
   color: var(--foam);
 }
 
-/* ---------- eyebrow / section titles ---------- */
+
 .eyebrow {
   font-size: 10px;
   color: var(--sunset);
@@ -176,7 +171,7 @@ h2.section-title {
   background: var(--sea-mid);
 }
 
-/* ---------- hero ---------- */
+
 .hero {
   padding: 56px 0 72px;
 }
@@ -273,7 +268,7 @@ h2.section-title {
 
 .hero-meta span { display: inline-flex; align-items: center; gap: 6px; }
 
-/* ---------- about ---------- */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -304,7 +299,7 @@ h2.section-title {
   box-shadow: 3px 3px 0 0 var(--ink);
 }
 
-/* ---------- skills / inventory slots ---------- */
+
 .inventory {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -351,7 +346,7 @@ h2.section-title {
   transform: rotate(6deg);
 }
 
-/* ---------- timeline (session log) ---------- */
+
 .timeline-cols {
   display: grid;
   grid-template-columns: 1fr;
@@ -420,7 +415,7 @@ h2.section-title {
 .tl-body ul { margin: 6px 0 0 18px; padding: 0; }
 .tl-body li { margin-bottom: 4px; }
 
-/* ---------- projects (swell forecast) ---------- */
+
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -484,7 +479,7 @@ h2.section-title {
   padding: 3px 8px;
 }
 
-/* ---------- languages (signals) ---------- */
+
 .signal-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -531,7 +526,7 @@ h2.section-title {
   margin-top: 10px;
 }
 
-/* ---------- footer / contact ---------- */
+
 .footer {
   padding: 72px 0 40px;
   text-align: center;
@@ -555,7 +550,7 @@ h2.section-title {
   margin-top: 40px;
 }
 
-/* ---------- resume page specific ---------- */
+
 .resume-shell {
   background: var(--sea-panel);
   border: 3px solid var(--ink);
@@ -650,7 +645,7 @@ h2.section-title {
   margin: 10px 0 50px;
 }
 
-/* ---------- responsive ---------- */
+
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; }
   .hero-scene-box { order: -1; }
@@ -662,7 +657,7 @@ h2.section-title {
   .resume-contact { text-align: left; }
 }
 
-/* ---------- reduced motion ---------- */
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation: none !important; transition: none !important; }
